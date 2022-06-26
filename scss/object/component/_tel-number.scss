@@ -1,0 +1,58 @@
+@use '../../global/index' as global;
+
+
+// ------------------------------------------------
+// 電話番号　ヘッダー
+// ------------------------------------------------
+
+.c-tel-number--header {
+  color: global.$blue;
+  text-align: center;
+  margin: 15.5px 130px 15.5px 40px;
+}
+.c-tel-number__tel--header {
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+  font-size: global.$font-xlarge;
+  i {
+    font-size: global.$font-large;
+  }
+}
+.c-tel-number__hours--header {
+  margin-top: 2px;
+  margin-left: 12px;
+  font-size: global.$font-middle;
+}
+
+
+
+// ------------------------------------------------
+// 電話番号　ファーストビュー
+// ------------------------------------------------
+
+.c-tel-number--fv {
+  width: 240px;
+  height: 56px;
+  color: global.$white;
+  background-color: global.$blue;
+  text-align: center;
+  padding: 4px 14px;
+  // margin: 15.5px 130px 15.5px 40px;
+  position: absolute;
+  left: 120px;
+  top: 513px;
+}
+.c-tel-number__tel--fv {
+  letter-spacing: 0.1em;
+  margin-top: 4px;
+  font-size: global.$font-xlarge;
+  i {
+    font-size: global.$font-large;
+  }
+}
+.c-tel-number__hours--fv {
+  margin-top: 2px;
+  margin-left: 12px;
+  font-size: global.$font-middle;
+}
+

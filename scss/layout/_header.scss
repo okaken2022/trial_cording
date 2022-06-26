@@ -1,0 +1,55 @@
+@use '../global/index' as global;
+
+.l-header {
+  @include global.flex-center-between;
+  height: 80px;
+  position: relative;
+
+}
+
+
+
+// ------------------------------------------------
+// グローバルナビ
+// ------------------------------------------------
+
+.l-header-nav {
+  width: 544px;
+  margin-left: auto;
+}
+
+.l-header-nav__list {
+  @include global.flex-center-between;
+  text-align: center;
+}
+
+.l-header-nav__item {
+  &--en {
+    font-size: global.$font-xsmall;
+    color: global.$black;
+  }
+  &--ja {
+    font-size: global.$font-middle;
+    color: global.$blue;
+  }
+}
+
+
+
+// ------------------------------------------------
+// お問い合わせ
+// ------------------------------------------------
+.l-header-nav__contact {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // margin-right: 0;
+  width: 128px;
+  height: 80px;
+  background-color: global.$green;
+  color: global.$white;
+}
