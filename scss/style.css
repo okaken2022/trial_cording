@@ -435,19 +435,6 @@ th {
     grid-template-rows: 82px auto 76px;
   }
 }
-.l-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 900px) {
-  .l-footer {
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-  }
-}
 .l-header {
   display: flex;
   align-items: center;
@@ -491,15 +478,6 @@ th {
   color: #fff;
 }
 
-.l-main {
-  padding-bottom: 40px;
-}
-
-@media screen and (max-width: 900px) {
-  .l-main {
-    padding-bottom: 80px;
-  }
-}
 .c-tel-number--header {
   color: #192F60;
   text-align: center;
@@ -529,7 +507,7 @@ th {
   text-align: center;
   padding: 4px 14px;
   position: absolute;
-  left: 120px;
+  left: 110px;
   top: 513px;
 }
 
@@ -558,13 +536,36 @@ th {
   line-height: 48px;
   padding: 4px 16px;
   position: absolute;
-  left: 440px;
+  left: 430px;
   top: 513px;
   position: relative;
 }
 
 .c-contact-btn__arrow {
   margin-left: 8px;
+}
+
+.c-detail-btn {
+  display: inline-block;
+  color: #192F60;
+  border: solid 1px #192F60;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.c-section-logo {
+  display: inline-block;
+  color: #fff;
+  background-color: #192F60;
+  font-weight: bold;
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
+  padding: 12px;
+  line-height: 1;
+}
+.c-section-logo--concept {
+  margin-bottom: 8px;
 }
 
 .p-fv {
@@ -583,7 +584,7 @@ th {
   background-color: #fff;
   padding: 13px 16px;
   position: absolute;
-  left: 120px;
+  left: 110px;
   line-height: 1;
 }
 .p-fv__copy--l1 {
@@ -600,7 +601,7 @@ th {
   color: #192F60;
   background-color: #fff;
   position: absolute;
-  left: 120px;
+  left: 110px;
   line-height: 1;
   padding: 13px 16px;
   top: 390px;
@@ -610,7 +611,7 @@ th {
   width: 100%;
   height: 80px;
   padding-left: 40px;
-  margin-left: 120px;
+  margin-left: 110px;
   background-color: #fff;
   opacity: 0.95;
   position: absolute;
@@ -650,6 +651,115 @@ th {
   background-image: url(../img/concept-bg.png);
   background-repeat: no-repeat;
   height: 676px;
+  text-align: center;
+}
+
+.p-concept-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 5px 56px 190px;
+}
+
+.p-concept-img img {
+  width: 475px;
+}
+
+.p-concept-text-group {
+  height: 230px;
+  align-content: space-between;
+  text-align: right;
+}
+
+.p-concept-text-group__price {
+  height: 75px;
+  margin-top: 40px;
+  text-align: right;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  color: #192F60;
+  font-size: 2rem;
+}
+.p-concept-text-group__price span {
+  font-size: 6rem;
+}
+
+.p-concept-description {
+  text-align: left;
+  padding: 0 4px 0 190px;
+}
+
+.l-feature {
+  height: 520px;
+  background-image: url(../img/feature-bg.png);
+  background-size: cover;
+  padding: 60px 0 10px 0;
+  position: relative;
+}
+
+.l-feature-text-group {
+  display: flex;
+}
+
+.l-feature-text-group__difference {
+  font-size: 2rem;
+  color: #192F60;
+  font-weight: bold;
+  padding: 20px 0 0 8px;
+}
+
+.l-feature-text-group__description {
+  color: #192F60;
+  display: block;
+  width: 370px;
+}
+
+.l-feature-right {
+  position: relative;
+}
+
+.l-feature-list__item {
+  display: flex;
+  position: absolute;
+  width: 590px;
+  height: 100px;
+  align-items: center;
+}
+.l-feature-list__item:nth-child(1) {
+  top: 40px;
+  left: 670px;
+}
+.l-feature-list__item:nth-child(2) {
+  top: 210px;
+  left: 570px;
+}
+.l-feature-list__item:nth-child(3) {
+  top: 380px;
+  left: 470px;
+}
+
+.l-feature-list__number {
+  font-size: 10rem;
+  color: #EFF1F4;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.l-feature-list__text {
+  margin-left: 16px;
+}
+
+.l-feature-list__title {
+  font-size: 2.4rem;
+  color: #192F60;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 33px;
+}
+
+.l-feature-list__description {
+  line-height: 27px;
 }
 
 .u-font--xsmall {
@@ -691,6 +801,26 @@ th {
 .u-width--max1140 {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.u-mt40 {
+  margin-top: 40px;
+}
+
+.u-mt80 {
+  margin-top: 80px;
+}
+
+.u-mb16 {
+  margin-bottom: 16px;
+}
+
+.u-mb40 {
+  margin-bottom: 40px;
+}
+
+.u-mb80 {
+  margin-bottom: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

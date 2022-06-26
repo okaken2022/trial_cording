@@ -7,4 +7,41 @@
   background-image: url(../img/concept-bg.png) ;
   background-repeat: no-repeat;
   height: 676px;
+  text-align: center;
+}
+
+.p-concept-container {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 120px 5px 56px 190px;
+}
+
+.p-concept-img {
+  img {
+    width: 475px;
+  }
+}
+.p-concept-text-group {
+  height: 230px;
+  align-content: space-between;
+  text-align: right;
+}
+
+.p-concept-text-group__price {
+  height: 75px;
+  margin-top: 40px;
+  text-align: right;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  color: global.$blue;
+  font-size: global.$font-large;
+  span {
+    font-size: 6.0rem;
+  }
+}
+
+.p-concept-description {
+  text-align: left;
+  padding:0 4px 0 190px;
 }

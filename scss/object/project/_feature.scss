@@ -1,0 +1,81 @@
+@use '../../global/index' as global;
+// ------------------------------------------------
+// LOGOの3つの特徴
+// ------------------------------------------------
+.l-feature {
+  height: 520px;
+  background-image: url(../img/feature-bg.png);
+  background-size: cover;
+  padding: 60px 0 10px 0; 
+  position: relative;
+}
+
+.l-feature-text-group {
+  display: flex;
+}
+
+.l-feature-text-group__difference {
+  font-size: global.$font-large;
+  color: global.$blue;
+  font-weight: bold;
+  padding: 20px 0 0 8px;
+}
+
+.l-feature-text-group__description {
+  color: global.$blue;
+  display: block;
+  width: 370px;
+}
+
+
+
+// ------------------------------------------------
+// リスト
+// ------------------------------------------------
+.l-feature-right {
+  position: relative;
+}
+
+.l-feature-list__item {
+  display: flex;
+  position: absolute;
+  width: 590px;
+  height: 100px;
+  align-items: center;
+  &:nth-child(1) {
+    top: 40px;
+    left: 670px;
+  }
+  &:nth-child(2) {
+    top: 210px;
+    left: 570px;
+  }
+  &:nth-child(3) {
+    top: 380px;
+    left: 470px;
+  }
+}
+
+.l-feature-list__number {
+  font-size: 10rem;
+  color: global.$lightgray;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.l-feature-list__text {
+  margin-left: 16px;
+}
+
+.l-feature-list__title {
+  font-size: global.$font-xlarge;
+  color: global.$blue;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  line-height: 33px;
+}
+
+.l-feature-list__description {
+  line-height: 27px;
+
+}

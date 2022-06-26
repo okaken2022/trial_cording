@@ -1,0 +1,19 @@
+@use '../../global/index' as global;
+// ------------------------------------------------
+// セクション　ロゴ
+// ------------------------------------------------
+.c-section-logo{
+  display: inline-block;
+  color: global.$white;
+  background-color: global.$blue;
+  font-weight: bold;
+  font-size: global.$font-xxlarge;
+  letter-spacing: 0.1em;
+  padding: 12px;
+  line-height: 1;
+  
+  &--concept {
+    margin-bottom: 8px;
+  }
+
+}

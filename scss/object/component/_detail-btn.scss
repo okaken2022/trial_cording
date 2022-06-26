@@ -1,0 +1,13 @@
+@use '../../global/index' as global;
+// ------------------------------------------------
+// "詳しく見る"ボタン
+// ------------------------------------------------
+
+.c-detail-btn {
+  display: inline-block;
+  color: global.$blue;
+  border: solid 1px global.$blue;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+}
