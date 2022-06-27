@@ -478,6 +478,24 @@ th {
   color: #fff;
 }
 
+.l-footer {
+  background-color: #192F60;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.l-footer__address {
+  margin-top: 24px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.l-footer__copyright {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  color: #AEB6C7;
+}
+
 .c-tel-number--header {
   color: #192F60;
   text-align: center;
@@ -499,13 +517,15 @@ th {
   font-size: 1.6rem;
 }
 
-.c-tel-number--fv {
+.c-tel-number {
   width: 240px;
   height: 56px;
   color: #fff;
   background-color: #192F60;
   text-align: center;
   padding: 4px 14px;
+}
+.c-tel-number--fv {
   position: absolute;
   left: 110px;
   top: 513px;
@@ -526,7 +546,7 @@ th {
   font-size: 1.6rem;
 }
 
-.c-contact-btn--fv {
+.c-contact-btn {
   width: 240px;
   height: 56px;
   color: #fff;
@@ -535,10 +555,14 @@ th {
   text-align: center;
   line-height: 48px;
   padding: 4px 16px;
+}
+.c-contact-btn--fv {
   position: absolute;
   left: 430px;
   top: 513px;
-  position: relative;
+}
+.c-contact-btn--cta {
+  margin-left: 80px;
 }
 
 .c-contact-btn__arrow {
@@ -552,6 +576,7 @@ th {
   width: 240px;
   height: 40px;
   line-height: 40px;
+  text-align: center;
 }
 
 .c-section-logo {
@@ -566,6 +591,9 @@ th {
 }
 .c-section-logo--concept {
   margin-bottom: 8px;
+}
+.c-section-logo--work {
+  text-align: right;
 }
 
 .p-fv {
@@ -608,14 +636,14 @@ th {
 }
 
 .p-fv-news {
-  width: 100%;
+  width: calc(100% - 110px);
   height: 80px;
   padding-left: 40px;
-  margin-left: 110px;
   background-color: #fff;
   opacity: 0.95;
   position: absolute;
   top: 650px;
+  left: 110px;
   display: flex;
   line-height: 80px;
 }
@@ -727,15 +755,15 @@ th {
 }
 .l-feature-list__item:nth-child(1) {
   top: 40px;
-  left: 670px;
+  right: 120px;
 }
 .l-feature-list__item:nth-child(2) {
   top: 210px;
-  left: 570px;
+  right: 220px;
 }
 .l-feature-list__item:nth-child(3) {
   top: 380px;
-  left: 470px;
+  right: 320px;
 }
 
 .l-feature-list__number {
@@ -760,6 +788,240 @@ th {
 
 .l-feature-list__description {
   line-height: 27px;
+}
+
+.p-service-wrapper {
+  background-image: url(../img/service-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 700px;
+  padding: 80px 0 40px 0;
+}
+
+.p-service__description {
+  width: 945px;
+}
+
+.p-service__list {
+  padding: 0 90px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-service__card {
+  width: 310px;
+  height: 410px;
+  padding: 152px 16px 0 16px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #fff;
+}
+.p-service__card:nth-child(1) {
+  background-image: url(../img/service01.png);
+}
+.p-service__card:nth-child(2) {
+  background-image: url(../img/service02.png);
+}
+.p-service__card:nth-child(3) {
+  background-image: url(../img/service03.png);
+}
+
+.p-service-card__title {
+  display: inline-block;
+  color: #192F60;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  padding: 12px;
+  line-height: 1;
+}
+
+.p-service-card__title-en {
+  font-size: 1.1rem;
+  color: #192F60;
+  padding-left: 16px;
+}
+
+.p-service-card__descriton {
+  line-height: 2em;
+}
+
+.p-service-card__btn {
+  text-align: center;
+}
+
+.container {
+  margin: 30px auto 0;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* 中央以外のスライド */
+.slick-img img {
+  height: auto;
+  opacity: 0.3;
+  transform: scale(0.8);
+  transition: opacity 0.5s, transform 0.5s;
+  width: 100%;
+}
+
+/* 中央のスライド */
+.slider .slick-center img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.p-works-wrapper {
+  background-image: url(../img/works-bg.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 80px 0 40px 0;
+  height: 700px;
+}
+
+.p-works-text-part {
+  text-align: right;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 40vw;
+  /*スライダー内の画像を60vwにしてレスポンシブ化*/
+  height: auto;
+  padding-top: 100px;
+}
+
+.slider .slick-slide {
+  transform: scale(0.7);
+  /*左右の画像のサイズを80%に*/
+  transition: all 0.5s;
+  /*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;
+  /*透過50%*/
+}
+
+.slider .slick-slide.slick-center {
+  transform: scale(1);
+  /*中央の画像のサイズだけ等倍に*/
+  opacity: 1;
+  /*透過なし*/
+}
+.slider .slick-slide.slick-center img {
+  padding-top: 60px;
+}
+
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+.slick-dots {
+  display: none;
+}
+
+.slick-dots li {
+  display: none;
+}
+
+.p-blog {
+  height: 515px;
+  background-image: url(../img/blog-bg.png);
+  background-size: cover;
+}
+
+.p-blog-wrapper {
+  background-image: url(../img/blog-bg2.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 595px;
+  padding-top: 80px;
+}
+
+.p-blog-list {
+  padding-bottom: 55px;
+  margin: 0 auto;
+  width: 950px;
+  background-color: #fff;
+}
+
+.p-blog-news {
+  width: 760px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 80px;
+  display: flex;
+  line-height: 80px;
+  border-bottom: solid 1px #CACACA;
+}
+
+.p-blog-news__date {
+  margin-right: 32px;
+  font-size: 1.6rem;
+}
+
+.p-blog-news__article {
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
+.p-cta {
+  background-image: url(../img/cta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.p-cta-text {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.p-cta-btn {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 80px;
 }
 
 .u-font--xsmall {

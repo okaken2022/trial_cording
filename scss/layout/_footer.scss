@@ -1,0 +1,19 @@
+@use '../global/index' as global;
+
+.l-footer {
+  background-color: global.$blue;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.l-footer__address {
+  margin-top: 24px;
+  font-size: global.$font-middle;
+  color: global.$white;
+}
+
+.l-footer__copyright {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  color: #AEB6C7;
+}

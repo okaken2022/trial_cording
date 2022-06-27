@@ -48,14 +48,14 @@
 // NEWS
 // ------------------------------------------------
 .p-fv-news {
-  width: 100%;
+  width: calc(100% - 110px);
   height: 80px;
   padding-left: 40px;
-  margin-left: 110px;
   background-color: global.$white;
   opacity: 0.95;
   position: absolute;
   top: 650px;
+  left: 110px;
   display: flex;
   line-height: 80px;
 }

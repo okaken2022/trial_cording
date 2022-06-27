@@ -1,0 +1,43 @@
+@use '../../global/index' as global;
+// ------------------------------------------------
+// ブログ
+// ------------------------------------------------
+
+.p-blog {
+  height: 515px;
+  background-image: url(../img/blog-bg.png);
+  background-size: cover;
+}
+
+.p-blog-wrapper {
+  background-image: url(../img/blog-bg2.png) ;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 595px;
+  padding-top: 80px;
+}
+.p-blog-list {
+  padding-bottom: 55px;
+  margin: 0 auto;
+  width: 950px;
+  background-color: global.$white;
+}
+.p-blog-news {
+  width: 760px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 80px;
+  display: flex;
+  line-height: 80px;
+  border-bottom: solid 1px #CACACA;
+}
+
+.p-blog-news__date {
+  margin-right: 32px;
+  font-size: global.$font-middle;
+}
+
+.p-blog-news__article {
+  font-size: global.$font-middle;
+  text-decoration: underline;
+}

@@ -7,11 +7,21 @@
   <title>Trial Cording</title>
   <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+  <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <body>
+
+
+<!-- // ------------------------------------------------
+// ヘッダー
+// ------------------------------------------------ -->
   <header class="l-header u-width--max1260">
     <h1 class="l-header__logo">
-      <a href="#"><img src="img/logo.png" alt=""></a>
+      <a href="#"><img src="img/logo-header.png" alt=""></a>
     </h1>
     <nav class="l-header-nav">
       <ul class="l-header-nav__list">
@@ -59,6 +69,10 @@
     <p>お問い合わせ</p>
   </a>
 
+
+<!-- // ------------------------------------------------
+// ファーストビュー
+// ------------------------------------------------   -->
   <main>
     <section class="p-fv">
       <h2 class="p-fv__copy p-fv__copy--l1">法人集客にフォーカスした</h2>
@@ -70,20 +84,25 @@
         <p class="p-fv-news__article">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</p>
       </div>
 
-      <div class="c-tel-number--fv">
+      <div class="c-tel-number c-tel-number--fv">
         <a href="#info">
           <p class="c-tel-number__tel--fv"><i class="fa-solid fa-phone"></i>03-1234-5678</p>
           <p class="c-tel-number__hours--fv">平日10：00～18：00</p>
         </a>
       </div>
 
-      <div class="c-contact-btn--fv">
+      <div class="c-contact-btn c-contact-btn--fv">
         <a href="#contact">
           <p>お問い合わせ<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></p>
         </a>
       </div>
     </section>
 
+
+
+<!-- // ------------------------------------------------
+// コンセプト
+// ------------------------------------------------ -->
     <section class="p-concept u-width--max1140 u-mt80" id="#concept">
       <div class="p-concept-container">
         <div class="p-concept-img"><img src="img/concept-img.png" alt=""></div>
@@ -105,6 +124,11 @@
       <a href="" class="c-detail-btn u-mt40">詳しく見る<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></a>
     </section>
 
+
+
+<!-- // ------------------------------------------------
+// 特徴
+// ------------------------------------------------ -->
     <section class="l-feature u-mt80" id="feature">
       <div class="l-feature-text-group u-width--max1140">
         <div class="l-feature-text-group__left">
@@ -139,6 +163,128 @@
         </div>
       </div>
     </section>
+
+
+
+<!-- // ------------------------------------------------
+// サービス
+// ------------------------------------------------ -->
+    <section class="p-service u-mt80">
+      <div class="p-service-wrapper u-width--max1140">
+        <p class="c-section-logo u-mb40">WEB集客をトータルサポート</p>
+        <p class="p-service__description u-mb40">デザインからコーディング・開発まで基本的に全ての工程を自社内で行うため、無駄な中間コストがかかりません。またデザインが良いだけでなく、集客に繋がるようなご提案をいたします。</p>
+        <ul class="p-service__list">
+          <li class="p-service__card">
+            <p class="p-service-card__title">ホームページ制作事業</p>
+            <p class="p-service-card__title-en">WEBSITE DESIGN</p>
+            <p class="p-service-card__descriton">事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章</p>
+            <a href="" class="c-detail-btn u-mt40">詳しく見る<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></a>
+          </li>
+          <li class="p-service__card">
+            <p class="p-service-card__title">SEO対策事業</p>
+            <p class="p-service-card__title-en">SEARCH ENGINE MARKETING</p>
+            <p class="p-service-card__descriton">事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章</p>
+            <a href="" class="c-detail-btn u-mt40">詳しく見る<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></a>
+          </li>
+          <li class="p-service__card">
+            <p class="p-service-card__title">WEB運用事業</p>
+            <p class="p-service-card__title-en">WEB OPERATION</p>
+            <p class="p-service-card__descriton">事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章事業内容についての文章</p>
+            <div class="p-service-card__btn">
+              <a href="" class="c-detail-btn u-mt40">詳しく見る<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+<!-- // ------------------------------------------------
+// ワークス
+// ------------------------------------------------ -->
+    <section class="p-works u-mt80" id="works">
+      <div class="p-works-wrapper u-width--max1140">
+        <div class="p-works-text-part">
+          <p class="c-section-logo c-section-logo--work u-mb40">WEB集客をトータルサポート</p>
+          <p class="p-works-text-part__descriton">BtoBのコーポレートサイトを中心に様々なWEBサイトの制作実績がございます。集客に繋がるデザインで御社の売上UPに貢献する提案をします。</p>
+        </div>
+        <ul class="slider">
+          <li><img src="img/works01.png" alt=""></li>
+          <li><img src="img/works02.png" alt=""></li>
+          <li><img src="img/works03.png" alt=""></li>
+          <li><img src="img/works01.png" alt=""></li>
+          <li><img src="img/works02.png" alt=""></li>
+          <li><img src="img/works03.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
+
+
+<!-- // ------------------------------------------------
+// ブログ
+// ------------------------------------------------ -->
+    <section class="p-blog">
+        <div class="p-blog-wrapper u-width--max1140">
+          <ul class="p-blog-list">
+            <li class="p-blog-news">
+              <time class="p-blog-news__date" datetime="2020-00-00">2020/00/00</time>
+              <a href="#"><p class="p-blog-news__article">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</p></a>
+            </li>
+            <li class="p-blog-news">
+              <time class="p-blog-news__date" datetime="2020-00-00">2020/00/00</time>
+              <a href="#"><p class="p-blog-news__article">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</p></a>
+            </li>
+            <li class="p-blog-news">
+              <time class="p-blog-news__date" datetime="2020-00-00">2020/00/00</time>
+              <a href="#"><p class="p-blog-news__article">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</p></a>
+            </li>
+            <li class="p-blog-news">
+              <time class="p-blog-news__date" datetime="2020-00-00">2020/00/00</time>
+              <a href="#"><p class="p-blog-news__article">タイトルテキストリンクタイトルテキストリンクタイトルテキストリンク</p></a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+
+<!-- // ------------------------------------------------
+// CTA
+// ------------------------------------------------ -->
+    <div class="p-cta">
+      <p class="p-cta-text">お気軽にお問い合わせください！<br>
+        サクッと概算見積書を作成します</p>
+      <div class="p-cta-btn">
+        <div class="c-tel-number">
+          <a href="#info">
+            <p class="c-tel-number__tel--fv"><i class="fa-solid fa-phone"></i>03-1234-5678</p>
+            <p class="c-tel-number__hours--fv">平日10：00～18：00</p>
+          </a>
+        </div>
+  
+        <div class="c-contact-btn c-contact-btn--cta">
+          <a href="#contact">
+            <p>お問い合わせ<i class="fa-solid fa-caret-right c-contact-btn__arrow"></i></p>
+          </a>
+        </div>
+      </div>
+    </div>
   </main>
+
+
+<!--// ------------------------------------------------
+// フッター
+// ------------------------------------------------ -->
+  <footer class="l-footer">
+    <img src="img/logo-footer.png" alt="" class="l-footer__logo">
+    <p class="l-footer__address">〒123-456　東京都架空区架空1-1-1　KAKUビル2F</p>
+    <p class="l-footer__copyright">© Copyright LOGO All rights reserved.</p>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/js/6-1-7.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

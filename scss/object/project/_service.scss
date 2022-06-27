@@ -1,0 +1,89 @@
+@use '../../global/index' as global;
+
+// ------------------------------------------------
+// サービス
+// ------------------------------------------------
+
+.p-service-wrapper {
+  background-image: url(../img/service-bg.png) ;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 700px;
+  padding: 80px 0 40px 0;
+
+}
+
+.p-service__description {
+  width: 945px;
+}
+
+.p-service__list {
+  padding: 0 90px 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.p-service__card {
+  width: 310px;
+  height: 410px;
+  padding: 152px 16px 0 16px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: global.$white;
+  &:nth-child(1) {
+    background-image: url(../img/service01.png) ;
+  }
+  &:nth-child(2) {
+    background-image: url(../img/service02.png) ;
+  }
+  &:nth-child(3) {
+    background-image: url(../img/service03.png) ;
+  }
+
+}
+
+.p-service-card__title {
+  display: inline-block;
+  color: global.$blue;
+  background-color: global.$white;
+  font-weight: bold;
+  font-size: global.$font-large;
+  letter-spacing: 0.1em;
+  padding: 12px;
+  line-height: 1;
+}
+
+.p-service-card__title-en {
+  font-size: 1.1rem;
+  color: global.$blue;
+  padding-left: 16px;
+}
+
+.p-service-card__descriton {
+  line-height: 2em;
+}
+
+.p-service-card__btn {
+  text-align: center;
+}
+
+
+.container {
+  margin: 30px auto 0;
+  max-width: 500px;
+  width: 100%;
+}
+/* 中央以外のスライド */
+.slick-img img {
+  height: auto;
+  opacity: .3; // スライドを薄くする
+  transform: scale(.8); // スライドのサイズを80%にする
+  transition: opacity .5s, transform .5s; // スライド透過率と拡大のアニメーション時間を0.5秒に設定
+  width: 100%;
+}
+/* 中央のスライド */
+.slider .slick-center img {
+  opacity: 1; // 中央のスライドは透過しない
+  transform: scale(1); // 中央のスライドは小さくしない
+}
